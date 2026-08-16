@@ -1,0 +1,6 @@
+{
+  "Name": "WI5_Calculate_Client_Security_Hash",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}
