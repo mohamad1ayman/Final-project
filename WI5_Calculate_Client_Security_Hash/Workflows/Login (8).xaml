@@ -45,6 +45,7 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -120,7 +121,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="891.6,6727.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="891.6,8987.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="acmePassword" />
       <Variable x:TypeArguments="x:String" Name="acmeUsername" />
@@ -142,9 +143,9 @@
         </OutArgument>
       </p:GetSecureCredential.Username>
     </p:GetSecureCredential>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556.8,6581.6" sap2010:WorkflowViewState.IdRef="TryCatch_100">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556.8,8841.6" sap2010:WorkflowViewState.IdRef="TryCatch_100">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="555.2,5963.2" sap2010:WorkflowViewState.IdRef="Sequence_100">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="555.2,8223.2" sap2010:WorkflowViewState.IdRef="Sequence_100">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -201,10 +202,10 @@
                               </InArgument>
                             </uix:NTypeInto.SecureText>
                             <uix:NTypeInto.Target>
-                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" ContentHash="heL1SIyIXkCW8ilHQmdTMw" DesignTimeRectangle="8, 615, 1250, 42" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ' aaname='Password:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="88b18ae4-2205-4d02-8324-b6087df918aa" InformativeScreenshot="e8ab6dc9bc9fa9aca3ee270f347189d2.jpg" Reference="HyOdBwW_ZUyQWwxgMeUwCA/vJYedO-Pyk6kPV46ktNa3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/login" ContentHash="uoycLe4NLEyicTw0tx4VuQ" DesignTimeRectangle="344, 624, 606, 42" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ' aaname='Password:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a884a2a4-85b0-46a8-b707-bcde8597291c" InformativeScreenshot="a96918d8ff07a0059edbca79545e9595.jpg" Reference="HyOdBwW_ZUyQWwxgMeUwCA/vJYedO-Pyk6kPV46ktNa3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
                                   <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                    <uix:Target DesignTimeRectangle="8, 583, 89, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password:' /&gt;" Guid="01d2c2e5-b05c-420e-8fcc-70267242b619" SearchSteps="FuzzySelector" />
+                                    <uix:Target DesignTimeRectangle="344, 592, 89, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password:' /&gt;" Guid="1aa53659-e8bf-4342-ba50-4f092ef3eb71" SearchSteps="FuzzySelector" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
@@ -319,19 +320,17 @@
               </ActivityFunc>
             </ui:RetryScope.Condition>
           </ui:RetryScope>
-          <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Chrome ACME System 1 - Work Items" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,3532.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="119955fc-ab94-4f52-bf64-bc8f188a6b61" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Chrome ACME System 1 - Work Items" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,5792.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="119955fc-ab94-4f52-bf64-bc8f188a6b61" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,3338.4" sap2010:WorkflowViewState.IdRef="Sequence_106">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,5598.4" sap2010:WorkflowViewState.IdRef="Sequence_106">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd2:DataTable" Name="dtAllWorkItems" />
-                    <Variable x:TypeArguments="x:Int32" Name="pageNum" />
                     <Variable x:TypeArguments="sd2:DataTable" Name="dtPageData" />
                     <Variable x:TypeArguments="sd2:DataTable" Name="dtWI5Items" />
-                    <Variable x:TypeArguments="x:Int32" Name="wi5RowIndex" />
                     <Variable x:TypeArguments="sd2:DataRow" Name="tmpRow" />
                     <Variable x:TypeArguments="x:String" Name="pageText" />
                     <Variable x:TypeArguments="x:String" Name="clientID" />
@@ -339,6 +338,8 @@
                     <Variable x:TypeArguments="x:String" Name="clientCountry" />
                     <Variable x:TypeArguments="x:String" Name="clientString" />
                     <Variable x:TypeArguments="x:String" Name="securityHash" />
+                    <Variable x:TypeArguments="x:Int32" Default="0" Name="pageNum" />
+                    <Variable x:TypeArguments="x:Int32" Default="0" Name="wi5RowIndex" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -360,7 +361,7 @@
                   <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">
-                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">pageNum</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_920">pageNum</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
@@ -369,9 +370,9 @@
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="486.4,787.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="486.4,909.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                     <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,656.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,779.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -384,12 +385,10 @@
                             </InArgument>
                           </uix:NGoToUrl.Url>
                         </uix:NGoToUrl>
-                        <Delay DisplayName="Delay After Navigate To Page" sap2010:WorkflowViewState.IdRef="Delay_Pagination">
-                          <Delay.Duration>
-                            <InArgument x:TypeArguments="s:TimeSpan">
-                              <CSharpValue x:TypeArguments="s:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_PaginationDelay">TimeSpan.FromSeconds(2)</CSharpValue>
-                            </InArgument>
-                          </Delay.Duration>
+                        <Delay DisplayName="Delay After Navigate To Page" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_Pagination">
+                          <InArgument x:TypeArguments="x:TimeSpan">
+                            <CSharpValue x:TypeArguments="x:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_PaginationDelay">TimeSpan.FromSeconds(2)</CSharpValue>
+                          </InArgument>
                         </Delay>
                         <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable" ContinueOnError="True" DisplayName="Extract Table Data 'TABLE'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions Url' ReferenceIdx='1' Name='Actions Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WIID' ReferenceIdx='2' Name='WIID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description' ReferenceIdx='3' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Type' ReferenceIdx='4' Name='Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='5' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='6' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Actions' attr='fulltext' name2='Actions Url' attr2='href' /&gt;&lt;column name='WIID' attr='fulltext' /&gt;&lt;column name='Description' attr='fulltext' /&gt;&lt;column name='Type' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Timeout="30000" Version="V5">
                           <uix:NExtractDataGeneric.ExtractedData>
@@ -416,7 +415,7 @@
                         <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">
-                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">pageNum</CSharpReference>
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_921">pageNum</CSharpReference>
                             </OutArgument>
                           </Assign.To>
                           <Assign.Value>
@@ -428,7 +427,7 @@
                       </Sequence>
                     </ui:InterruptibleWhile.Body>
                     <ui:InterruptibleWhile.Condition>
-                      <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">pageNum &lt;= 11</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_927">pageNum &lt;= 15</CSharpValue>
                     </ui:InterruptibleWhile.Condition>
                   </ui:InterruptibleWhile>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
@@ -453,7 +452,7 @@
                   <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_901">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">
-                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_901">wi5RowIndex</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_922">wi5RowIndex</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
@@ -503,7 +502,7 @@
                         <Assign sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_903">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">
-                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_903">wi5RowIndex</CSharpReference>
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_923">wi5RowIndex</CSharpReference>
                             </OutArgument>
                           </Assign.To>
                           <Assign.Value>
@@ -528,14 +527,14 @@
                   <ui:LogMessage DisplayName="Log Distinct WIID Count (diagnostic)" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_WI5Distinct" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_WI5Distinct">"Distinct WIIDs in dtWI5Items: " + dtWI5Items.AsEnumerable().Select(r => r["WIID"].ToString()).Distinct().Count().ToString() + " out of " + dtWI5Items.Rows.Count.ToString() + " total rows"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_WI5Distinct">"Distinct WIIDs in dtWI5Items: " + dtWI5Items.AsEnumerable().Select(r =&gt; r["WIID"].ToString()).Distinct().Count().ToString() + " out of " + dtWI5Items.Rows.Count.ToString() + " total rows"</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
                   <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_906">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">
-                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_906">wi5RowIndex</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_924">wi5RowIndex</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
@@ -544,9 +543,9 @@
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="Process Each WI5 Item" sap:VirtualizedContainerService.HintSize="486.4,521.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_901">
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="Process Each WI5 Item" sap:VirtualizedContainerService.HintSize="486.4,2484.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_901">
                     <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Process Body" sap:VirtualizedContainerService.HintSize="449.6,400" sap2010:WorkflowViewState.IdRef="Sequence_901">
+                      <Sequence DisplayName="Process Body" sap:VirtualizedContainerService.HintSize="449.6,2363.2" sap2010:WorkflowViewState.IdRef="Sequence_901">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -566,24 +565,22 @@
                             </InArgument>
                           </uix:NGoToUrl.Url>
                         </uix:NGoToUrl>
-                        <Delay DisplayName="Delay After Navigate To Details" sap2010:WorkflowViewState.IdRef="Delay_WI5Details">
-                          <Delay.Duration>
-                            <InArgument x:TypeArguments="s:TimeSpan">
-                              <CSharpValue x:TypeArguments="s:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_WI5Delay">TimeSpan.FromSeconds(2)</CSharpValue>
-                            </InArgument>
-                          </Delay.Duration>
+                        <Delay DisplayName="Delay After Navigate To Details" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_WI5Details">
+                          <InArgument x:TypeArguments="x:TimeSpan">
+                            <CSharpValue x:TypeArguments="x:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_WI5Delay">TimeSpan.FromSeconds(2)</CSharpValue>
+                          </InArgument>
                         </Delay>
                         <uix:NGetText DisplayName="Get Text 'Details Page' (VERIFY SELECTOR IN STUDIO)" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_WI5PageText" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Timeout="30000" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/*" DesignTimeRectangle="336, 200, 900, 600" ElementVisibilityArgument="None" FullSelectorArgument="&lt;webctrl tag='BODY' /&gt;" Guid="a1b2c3d4-1111-4a4a-8b8b-000000000001" ScopeSelectorArgument="&lt;html app='chrome.exe' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                          </uix:NGetText.Target>
                           <uix:NGetText.Text>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_WI5PageText">pageText</CSharpReference>
                             </OutArgument>
                           </uix:NGetText.Text>
-                          <uix:NGetText.Target>
-                            <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/*" DesignTimeRectangle="336, 200, 900, 600" ElementVisibilityArgument="None" FullSelectorArgument="&lt;webctrl tag='BODY' /&gt;" Guid="a1b2c3d4-1111-4a4a-8b8b-000000000001" ScopeSelectorArgument="&lt;html app='chrome.exe' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                          </uix:NGetText.Target>
                         </uix:NGetText>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientID">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientID">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_WI5ClientID">clientID</CSharpReference>
@@ -595,7 +592,7 @@
                             </InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientName">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientName">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_WI5ClientName">clientName</CSharpReference>
@@ -607,7 +604,7 @@
                             </InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientCountry">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientCountry">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_WI5ClientCountry">clientCountry</CSharpReference>
@@ -619,7 +616,7 @@
                             </InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientString">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_WI5ClientString">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">
                               <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_WI5ClientString">clientString</CSharpReference>
@@ -638,10 +635,49 @@
                             </InArgument>
                           </ui:LogMessage.Message>
                         </ui:LogMessage>
+                        <uix:NGoToUrl DisplayName="Go To URL - sha1-online.com" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Url="https://www.sha1-online.com/" Version="V5" />
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'clientString'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Version="V5">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="ignYl_kNAUu3fIjTVv_TwQ" DesignTimeRectangle="723, 387, 415, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' /&gt;" Guid="64158739-cf0f-4d5e-a360-7075fa44ed70" InformativeScreenshot="9dc7fa7320fbdb62a21b9d1939521135.jpg" Reference="HyOdBwW_ZUyQWwxgMeUwCA/CEXYpmWSqkmrTxNF7AWv4g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6">
+                              <uix:TargetAnchorable.WaitForReadyArgument>
+                                <InArgument x:TypeArguments="uix:NWaitForReady">
+                                  <CSharpValue x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="CSharpValue`1_931">UiPath.UIAutomationNext.Enums.NWaitForReady.None</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.WaitForReadyArgument>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.Text>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_928">clientString</CSharpValue>
+                            </InArgument>
+                          </uix:NTypeInto.Text>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hash'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="GPPgLuyjhUWfTEvJ1IV1Vw" DesignTimeRectangle="1138, 387, 58, 26" ElementType="Button" ElementVisibilityArgument="None" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="7c82e45b-34e4-439e-949c-0d13c22c7ae6" InformativeScreenshot="bad7dfdf7923d6eb2df312a5934917bf.jpg" Reference="HyOdBwW_ZUyQWwxgMeUwCA/KrFDT2XOs02a05daNVpaAQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6">
+                              <uix:TargetAnchorable.WaitForReadyArgument>
+                                <InArgument x:TypeArguments="uix:NWaitForReady">
+                                  <CSharpValue x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="CSharpValue`1_932">UiPath.UIAutomationNext.Enums.NWaitForReady.None</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.WaitForReadyArgument>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NGetText DisplayName="Get Text 'Result for sha1  189a7…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="119955fc-ab94-4f52-bf64-bc8f188a6b61" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="sha1-online.com" ContentHash="YqVRdypS6kyD-N2iUmg3Vg" DesignTimeRectangle="489, 485, 941, 27" ElementType="Text" ElementVisibilityArgument="None" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;p' tag='P' /&gt;" Guid="bf4e609e-3754-4fbe-9544-306fcfb0f16d" InformativeScreenshot="c1817a89d1612dd76ac15ec210e4c22d.jpg" Reference="HyOdBwW_ZUyQWwxgMeUwCA/MWC3AdxWcUG7lz9BKFThyg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V6">
+                              <uix:TargetAnchorable.WaitForReadyArgument>
+                                <InArgument x:TypeArguments="uix:NWaitForReady">
+                                  <CSharpValue x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="CSharpValue`1_933">UiPath.UIAutomationNext.Enums.NWaitForReady.None</CSharpValue>
+                                </InArgument>
+                              </uix:TargetAnchorable.WaitForReadyArgument>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
                         <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_907">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">
-                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_907">wi5RowIndex</CSharpReference>
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_925">wi5RowIndex</CSharpReference>
                             </OutArgument>
                           </Assign.To>
                           <Assign.Value>
